@@ -23,8 +23,8 @@ flowchart LR
     Unity.Serialization{Unity.Serialization} --> W(Write) & R(Read) 
     click Unity.Serialization "https://docs.unity3d.com/Packages/com.unity.serialization@3.1/manual/index.html" _blank
     Data[("Data <br> Profile 0<br>.<br>.<br>.<br> Profile N <br> Dictionary&lt;string,byte[]>")] --> |Default use profile 0| ChangeProfile(ChangeProfile) 
-    Data --> |Auto save on Application pause or quit| SaveToFile(SaveToFile)--> Unity.Serialization
-    Data --> |Auto load when startup| LoadFromFile(LoadFromFile)--> Unity.Serialization
+    Data --> |Save on Application pause or quit| SaveToFile(SaveToFile)--> Unity.Serialization
+    Data --> |Load when startup| LoadFromFile(LoadFromFile)--> Unity.Serialization
     Data --> Get(Get&lt;T>) & Set(Set&lt;T>) & DeleteKey(DeleteKey) & HasKey(HasKey) & DeleteAll(DeleteAll)
     File{{File Data}} --- W & R
 ```
