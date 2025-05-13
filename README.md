@@ -36,7 +36,7 @@ flowchart LR
 ### Add the line below to `Packages/manifest.json`
 
 for version `1.0.2`
-```csharp
+```json
 "com.wolf-org.game-data":"https://github.com/unity-package/game-data-unity.git#1.0.2",
 ```
 ## Use
